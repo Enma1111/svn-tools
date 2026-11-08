@@ -41,7 +41,7 @@ jobs:
           echo "minor=$(echo "$v" | cut -d. -f1,2)" >> "$GITHUB_OUTPUT"
 
       - id: meta
-        uses: docker/metadata-action@v5
+        uses: docker/metadata-action@v6
         with:
           images: ghcr.io/${{ github.repository }}
           tags: |
